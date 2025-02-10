@@ -95,7 +95,7 @@
               <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
                 <div class="rd-navbar-search_collapsable">
                   <ul class="rd-navbar-nav">
-                    <li><a href="index.html" id="linkIndex" style="font-weight: bold;">EN</a>
+                    <li><a href="" id="linkIndex" style="font-weight: bold;">EN</a>
                     </li>
                     <li><a href="index-fr.html" id="linkIndexFR" style="font-weight: bold;">FR</a>
                     </li>
@@ -468,11 +468,11 @@
           var linkIndexFR = document.getElementById('linkIndexFR');
           
           // Check and disable the link if it's the current page
-          if (currentPage === '/Bootstrap%20projects/template1/index.html' || currentPage === '/Bootstrap%20projects/template1/index-fr.html') {
-              if (currentPage === '/Bootstrap%20projects/template1/index.html') {
+          if (currentPage === '/index.html' || currentPage === '/index-fr.html' || currentPage === '/') {
+              if (currentPage === '/index.html' || currentPage === '/') {
                   linkIndex.style.pointerEvents = 'none';
               }
-              if (currentPage === '/Bootstrap%20projects/template1/index-fr.html') {
+              if (currentPage === '/index-fr.html') {
                   linkIndexFR.style.pointerEvents = 'none';
               }
           }
