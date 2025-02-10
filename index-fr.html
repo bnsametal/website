@@ -468,8 +468,8 @@
           var linkIndexFR = document.getElementById('linkIndexFR');
           
           // Check and disable the link if it's the current page
-          if (currentPage === '/index.html' || currentPage === '/index-fr.html') {
-              if (currentPage === '/index.html') {
+          if (currentPage === '/index.html' || currentPage === '/index-fr.html' || currentPage === '/') {
+              if (currentPage === '/index.html' || currentPage === '/') {
                   linkIndex.style.pointerEvents = 'none';
               }
               if (currentPage === '/index-fr.html') {
