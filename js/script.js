@@ -2586,7 +2586,7 @@
 		};
 }());
 
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
 	var currentPage = window.location.pathname; // Get the current page's URL
 	
 	// Reference to the links
@@ -2602,4 +2602,4 @@ window.onload = function() {
 			linkIndexEN.style.pointerEvents = 'none';
 		}
 	}
-};
+});
