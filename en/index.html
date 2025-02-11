@@ -95,9 +95,9 @@
               <div class="rd-navbar-nav-wrap rd-navbar-search_not-collapsable">
                 <div class="rd-navbar-search_collapsable">
                   <ul class="rd-navbar-nav">
-                    <li><a href="/" id="linkIndex" style="font-weight: bold;">EN</a>
+                    <li><a href="/en" id="linkIndexEN" style="font-weight: bold;">EN</a>
                     </li>
-                    <li><a href="/fr" id="linkIndexFR" style="font-weight: bold;">FR</a>
+                    <li><a href="/" id="linkIndex" style="font-weight: bold;">FR</a>
                     </li>
                   </ul>
                 </div>
@@ -459,24 +459,5 @@
     <!-- Javascript-->
     <script src="../js/core.min.js"></script>
     <script src="../js/script.js"></script>
-    <script>
-      window.onload = function() {
-          var currentPage = window.location.pathname; // Get the current page's URL
-          
-          // Reference to the links
-          var linkIndex = document.getElementById('linkIndex');
-          var linkIndexFR = document.getElementById('linkIndexFR');
-          
-          // Check and disable the link if it's the current page
-          if (currentPage === '/' || currentPage === '/fr/') {
-              if (currentPage === '/') {
-                  linkIndex.style.pointerEvents = 'none';
-              }
-              if (currentPage === '/fr/') {
-                  linkIndexFR.style.pointerEvents = 'none';
-              }
-          }
-      };
-    </script>
   </body>
 </html>
