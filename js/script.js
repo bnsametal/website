@@ -2585,21 +2585,3 @@
 			} )
 		};
 }());
-
-document.addEventListener("DOMContentLoaded", function() {
-	var currentPage = window.location.pathname; // Get the current page's URL
-	
-	// Reference to the links
-	var linkIndex = document.getElementById('linkIndex');
-	var linkIndexEN = document.getElementById('linkIndexEN');
-	
-	// Check and disable the link if it's the current page
-	if (currentPage === '/' || currentPage === '/en/') {
-		if (currentPage === '/') {
-			linkIndex.style.pointerEvents = 'none';
-		}
-		if (currentPage === '/en/') {
-			linkIndexEN.style.pointerEvents = 'none';
-		}
-	}
-});
